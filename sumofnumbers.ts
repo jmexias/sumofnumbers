@@ -33,4 +33,4 @@ function sumTheFunctionalWay(list: number[]): number {
   return list.reduce((acc: number, curr: number) => acc + curr, 0);
 }
 
-console.log(sumTheFunctionalWay([1, 2, 3, 4])); // 10
+console.log(sumTheFunctionalWay([1, 2, 3, 4])); // returns 10
