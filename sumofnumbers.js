@@ -6,7 +6,7 @@ function sumFor(list) {
     }
     return sum;
 }
-console.log(sumFor([1, 2, 3, 4]));
+console.log(sumFor([1, 2, 3, 4])); // 10
 function sumWhile(list) {
     let sum = 0;
     let i = 0;
@@ -16,15 +16,15 @@ function sumWhile(list) {
     }
     return sum;
 }
-console.log(sumWhile([1, 2, 3, 4]));
+console.log(sumWhile([1, 2, 3, 4])); // 10
 function sumRecursion(list) {
     if (list.length === 0) {
         return 0;
     }
     return list[0] + sumRecursion(list.slice(1));
 }
-console.log(sumRecursion([1, 2, 3, 4]));
+console.log(sumRecursion([1, 2, 3, 4])); // 10
 function sumTheFunctionalWay(list) {
     return list.reduce((acc, curr) => acc + curr, 0);
 }
-console.log(sumTheFunctionalWay([1, 2, 3, 4]));
+console.log(sumTheFunctionalWay([1, 2, 3, 4])); // returns 10
